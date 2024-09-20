@@ -22,8 +22,6 @@ arg11 = input,"15 0 * * *",tag=签知轩到任务时间
 arg12 = switch,true,tag=知轩任务开关
 arg13 = input,"0 7,11,17 * * *",tag=阿里云盘任务时间
 arg14 = switch,true,tag=阿里云盘任务开关
-arg53 = input,"30 10 * * *",tag=达美乐任务时间
-arg54 = switch,true,tag=达美乐任务开关
 arg15 = input,"30 0 * * *",tag=雀巢会员俱乐部任务时间
 arg16 = switch,true,tag=雀巢会员俱乐部任务开关
 arg17 = input,"0 8,18 * * *",tag=夸克网盘任务时间
@@ -62,6 +60,24 @@ arg49 = input,"5 9 * * *",tag=联想赚金豆任务时间
 arg50 = switch,true,tag=联想赚金豆任务开关
 arg51 = input,"9 9 * * *",tag=小蚕霸王餐任务时间
 arg52 = switch,true,tag=小蚕霸王餐任务开关
+arg53 = input,"30 10 * * *",tag=达美乐任务时间
+arg54 = switch,true,tag=达美乐任务开关
+arg55 = input,"0 9 * * *",tag=每天60s任务时间
+arg56 = switch,true,tag=每天60s任务开关
+arg57 = input,"50 9 * * *",tag=喜马拉雅任务时间
+arg58 = switch,true,tag=喜马拉雅任务开关
+arg59 = input,"40 8 * * *",tag=阿里网盘任务时间
+arg60 = switch,true,tag=阿里网盘任务开关
+arg61 = input,"30 9 * * *",tag=建行生活任务时间
+arg62 = switch,true,tag=建行生活任务开关
+arg63 = input,"0 12 * * *",tag=京东物流任务时间
+arg64 = switch,true,tag=京东物流任务开关
+arg65 = input,"40 9 * * *",tag=高德打车任务时间
+arg66 = switch,true,tag=高德打车任务开关
+arg67 = input,"15 9 * * *",tag=捷停车任务时间
+arg68 = switch,true,tag=捷停车任务开关
+arg69 = input,"30 20 * * 0",tag=微付金币任务时间
+arg70 = switch,true,tag=微付金币任务开关
 
 
 [Script]
@@ -72,7 +88,6 @@ cron {arg7} script-path=https://gist.githubusercontent.com/Sliverkiss/2e2093bfd5
 cron {arg9} script-path=https://gist.githubusercontent.com/Sliverkiss/4e0081f7b18a2cea9dbdf13545e60885/raw/hldc.js, timeout=300, enable= {arg10},tag=哈啰单车奖励金签到
 cron {arg11} script-path=https://raw.githubusercontent.com/Sliverkiss/GoodNight/master/Script/zhixuan.js, timeout=300, enable= {arg12}, tag=知轩
 cron {arg13} script-path=https://gist.githubusercontent.com/Sliverkiss/33800a98dcd029ba09f8b6fc6f0f5162/raw/aliyun.js, timeout=120, enable= {arg14}, tag=阿里云盘签到
-cron {arg53} script-path=https://gist.githubusercontent.com/Sliverkiss/6b4da0d367d13790a9fd1d928c82bdf8/raw/dlm.js,timeout=300, enable= {arg54}, tag=达美乐披萨
 cron {arg15} script-path=https://raw.githubusercontent.com/Sliverkiss/GoodNight/master/Script/nestle.js, timeout=300, enable= {arg16}, tag=雀巢会员俱乐部
 cron {arg17} script-path=https://gist.githubusercontent.com/Sliverkiss/1589f69e675019b0b685a57a89de9ea5/raw/quarkV2.js, timeout=300, enable= {arg18}, tag=夸克网盘
 cron {arg19} script-path=https://gist.githubusercontent.com/Sliverkiss/a56aaa31bbc01191590b9c4c5c698751/raw/linovel.js, timeout=300, enable= {arg20}, tag=轻之文库
@@ -91,6 +106,16 @@ cron {arg43} script-path=https://gist.githubusercontent.com/Sliverkiss/48154e527
 cron {arg45} script-path=https://raw.githubusercontent.com/Sliverkiss/GoodNight/master/Script/xwy.js, timeout=300, enable={arg46}, tag=希望云社区
 cron {arg47} script-path=https://gist.githubusercontent.com/Sliverkiss/3e1fe82fa18dbcff9b2ae7fdad7596a6/raw/ppmt.js, timeout=300, enable={arg48}, tag=泡泡玛特签到
 cron {arg49} script-path=https://gist.githubusercontent.com/Sliverkiss/b9eaf7c8d98df06087851c3e1d5040cf/raw/lenovo.js, timeout=300, enable={arg50}, tag=联想赚金豆
-cron {arg51} script-path=https://gist.githubusercontent.com/Sliverkiss/250a02315f0a2c99f42da3b3573375c8/raw/xcbwc.js, timeout=300, enable={arg52}, tag=小蚕霸王餐  
+cron {arg51} script-path=https://gist.githubusercontent.com/Sliverkiss/250a02315f0a2c99f42da3b3573375c8/raw/xcbwc.js, timeout=300, enable={arg52}, tag=小蚕霸王餐
+cron {arg53} script-path=https://gist.githubusercontent.com/Sliverkiss/6b4da0d367d13790a9fd1d928c82bdf8/raw/dlm.js,timeout=300, enable= {arg54}, tag=达美乐披萨
+cron {arg55} script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/60s.js, timeout=10, enable= {arg56}, tag=每天60s读懂世界
+cron {arg57} script-path=https://raw.githubusercontent.com/ClydeTime/Quantumult/main/Script/Task/xmlySign.js, timeout=60, enable= {arg58}, tag=喜马拉雅签到
+cron {arg59} script-path=https://raw.githubusercontent.com/zqzess/rule_for_quantumultX/master/js/Mine/aDriveCheckIn/aDriveCheckIn.js, enable= {arg60}, tag=阿里网盘签到
+cron {arg61} script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jhsh_checkIn.js, enable= {arg62}, tag=建行生活
+cron {arg63} script-path=https://raw.githubusercontent.com/id77/QuantumultX/master/task/jdWuLiu.js, timeout=300, enable= {arg64}, tag=京东物流
+cron {arg65} script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/ampDache.js, timeout=60, enable= {arg66}, tag=高德打车签到
+cron {arg67} script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jparking_sign.js, enable= {arg68}, tag=捷停车签到
+cron {arg69} script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/wechat_pay_coupon.js, enable= {arg70}, tag=微付金币
+
 
 [MITM]  
