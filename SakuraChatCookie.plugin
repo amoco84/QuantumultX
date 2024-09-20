@@ -31,12 +31,14 @@ arg20 = switch,true,tag=希望云社区获取token
 arg21 = switch,true,tag=泡泡玛特获取token
 arg22 = switch,true,tag=联想赚金豆获取token
 arg23 = switch,true,tag=小蚕霸王餐获取
-arg24 = switch,true,tag=微付金币获取token
-arg25 = switch,true,tag=TouchRetouch订阅
-arg26 = switch,true,tag=高德获取cookie
-arg27 = switch,true,tag=建行生活获取cookie
-arg28 = switch,true,tag=捷停车获取token
-arg29 = switch,true,tag=京东获取token
+arg24 = switch,true,tag=达美乐披萨获取token
+arg25 = switch,true,tag=微付金币获取token
+arg26 = switch,true,tag=TouchRetouch订阅
+arg27 = switch,true,tag=高德获取cookie
+arg28 = switch,true,tag=建行生活获取cookie
+arg29 = switch,true,tag=捷停车获取token
+arg30 = switch,true,tag=京东获取token
+arg31 = switch,true,tag=GlaDos获取token
 
 [Script]
 http-response ^https:\/\/(webapi|webapi2)\.qmai\.cn\/web\/seller\/(oauth\/flash-sale-login|account\/login-minp) script-path=https://gist.githubusercontent.com/Sliverkiss/8b4f5487e0f28786c7dec9c7484dcd5e/raw/teaMilk.js, requires-body=true, timeout=60, enable = {arg1}, tag=奶茶获取token
@@ -73,6 +75,7 @@ http-response ^https?:\/\/(m5(|-zb)|dache)\.amap\.com\/(ws\/yuece\/(act|openapi\
 http-response ^https:\/\/yunbusiness\.ccb\.com\/(clp_coupon|clp_service)\/txCtrl\?txcode=(A3341A038|autoLogin) script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jhsh_checkIn.js, requires-body=true, enabled={arg28}, tag=建行数据
 http-request ^https:\/\/sytgate\.jslife\.com\.cn\/core-gateway\/order\/carno\/pay\/info script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jparking_sign.js, requires-body=true, timeout=10, enabled={arg29}, tag=获取捷停车userId
 http-request ^https:\/\/(api\.m|me-api|ms\.jr)\.jd\.com\/(client\.action\?functionId=signBean|user_new\/info\/GetJDUserInfoUnion\?|gw\/generic\/hy\/h5\/m\/appSign\?) script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js, requires-body=true, enabled={arg30}, tag=获取京东Cookie
+http-request ^https:\/\/glados\.rocks\/api\/user\/checkin, script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/glados /glados.js requires-body=true, enabled={arg31}, tag=获取GLaDOS_Cookie
 
 [MITM]
 hostname = webapi2.qmai.cn,webapi.qmai.cn,qmwebapi.qmai.cn,h5.youzan.com,cdfmbrapi.cdfg.com.cn,miniapp.yaduo.com,api.hellobike.com,zxcstxt.com,auth.alipan.com,auth.aliyundrive.com,crm.nestlechinese.com,coral2.quark.cn,drive-pc.quark.cn,mvip.midea.cn,m.hualala.com,mxsa.mxbc.net,www.missevan.com,bbs-api.iqoo.com,xxyx-client-api.xiaoxiaoyouxuan.com,userapi.qiekj.com,xh-vip-api.a-touchin.com,tm-web.pin-dao.cn,app.fjxzj.com,xwyapi.newhope.cn,popvip.paquapp.com,mmembership.lenovo.com.cn,gw.xiaocantech.com,game.dominos.com.cn,api.revenuecat.com,sytgate.jslife.com.cn,yunbusiness.ccb.com,*.amap.com,payapp.weixin.qq.com
