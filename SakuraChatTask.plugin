@@ -109,13 +109,13 @@ cron {arg49} script-path=https://gist.githubusercontent.com/Sliverkiss/b9eaf7c8d
 cron {arg51} script-path=https://gist.githubusercontent.com/Sliverkiss/250a02315f0a2c99f42da3b3573375c8/raw/xcbwc.js, timeout=300, enable={arg52}, tag=小蚕霸王餐
 cron {arg53} script-path=https://gist.githubusercontent.com/Sliverkiss/6b4da0d367d13790a9fd1d928c82bdf8/raw/dlm.js,timeout=300, enable= {arg54}, tag=达美乐披萨
 cron {arg55} script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/60s.js, timeout=10, enable= {arg56}, tag=每天60s读懂世界
-cron {arg57} script-path=https://raw.githubusercontent.com/ClydeTime/Quantumult/main/Script/Task/xmlySign.js, timeout=60, enable= {arg58}, tag=喜马拉雅签到
-cron {arg59} script-path=https://raw.githubusercontent.com/zqzess/rule_for_quantumultX/master/js/Mine/aDriveCheckIn/aDriveCheckIn.js, timeout=60, enable= {arg60}, tag=阿里网盘签到
-cron {arg61} script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jhsh_checkIn.js, enable= {arg62}, timeout=60, tag=建行生活
+cron {arg57} script-path=https://raw.githubusercontent.com/ClydeTime/Quantumult/main/Script/Task/xmlySign.js, timeout=300, enable= {arg58}, tag=喜马拉雅签到
+cron {arg59} script-path=https://raw.githubusercontent.com/zqzess/rule_for_quantumultX/master/js/Mine/aDriveCheckIn/aDriveCheckIn.js, timeout=300, enable= {arg60}, tag=阿里网盘签到
+cron {arg61} script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jhsh_checkIn.js, enable= {arg62}, timeout=300, tag=建行生活
 cron {arg63} script-path=https://raw.githubusercontent.com/id77/QuantumultX/master/task/jdWuLiu.js, timeout=300, enable= {arg64}, tag=京东物流
-cron {arg65} script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/ampDache.js, timeout=60, enable= {arg66}, tag=高德打车签到
-cron {arg67} script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jparking_sign.js, timeout=60, enable= {arg68}, tag=捷停车签到
-cron {arg69} script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/wechat_pay_coupon.js, timeout=60, enable= {arg70}, tag=微付金币
+cron {arg65} script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/ampDache.js, timeout=300, enable= {arg66}, tag=高德打车签到
+cron {arg67} script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jparking_sign.js, timeout=300, enable= {arg68}, tag=捷停车签到
+cron {arg69} script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/wechat_pay_coupon.js, timeout=300, enable= {arg70}, tag=微付金币
 
 
 [MITM]  
