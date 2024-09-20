@@ -80,6 +80,8 @@ arg69 = input,"30 20 * * 0",tag=微付金币任务时间
 arg70 = switch,true,tag=微付金币任务开关
 arg71 = input,"15 16 * * *",tag=GlaDos任务时间
 arg72 = switch,true,tag=GlaDos任务开关
+arg73 = input,"15 16 * * *",tag=GlaDos任务时间
+arg74 = switch,true,tag=GlaDos任务开关
 
 
 
@@ -119,6 +121,7 @@ cron {arg63} script-path=https://raw.githubusercontent.com/id77/QuantumultX/mast
 cron {arg65} script-path=https://raw.githubusercontent.com/wf021325/qx/master/task/ampDache.js, timeout=300, enable= {arg66}, tag=高德打车签到
 cron {arg67} script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jparking_sign.js, timeout=300, enable= {arg68}, tag=捷停车签到
 cron {arg69} script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/wechat_pay_coupon.js, timeout=300, enable= {arg70}, tag=微付金币
-cron {arg71} script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/glados/glados.js, timeout=300, enable= {arg7}, tag=GlaDos签到
+cron {arg71} script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/glados/glados.js, enable= {arg72}, tag=GlaDos签到
+cron {arg73} script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/nasa/nasapic.js, enable= {arg74}, tag=NASA每日一图
 
 [MITM]  
