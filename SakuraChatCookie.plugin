@@ -31,7 +31,12 @@ arg20 = switch,true,tag=希望云社区获取token
 arg21 = switch,true,tag=泡泡玛特获取token
 arg22 = switch,true,tag=联想赚金豆获取token
 arg23 = switch,true,tag=小蚕霸王餐获取
-arg24 = switch,true,tag=达美乐披萨获取token
+arg24 = switch,true,tag=微付金币获取token
+arg25 = switch,true,tag=TouchRetouch订阅
+arg26 = switch,true,tag=高德获取cookie
+arg27 = switch,true,tag=建行生活获取cookie
+arg28 = switch,true,tag=捷停车获取token
+arg29 = switch,true,tag=京东获取token
 
 [Script]
 http-response ^https:\/\/(webapi|webapi2)\.qmai\.cn\/web\/seller\/(oauth\/flash-sale-login|account\/login-minp) script-path=https://gist.githubusercontent.com/Sliverkiss/8b4f5487e0f28786c7dec9c7484dcd5e/raw/teaMilk.js, requires-body=true, timeout=60, enable = {arg1}, tag=奶茶获取token
