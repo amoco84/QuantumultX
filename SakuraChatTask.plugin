@@ -25,7 +25,7 @@ arg14 = switch,true,tag=阿里云盘任务开关
 arg15 = input,"30 0 * * *",tag=雀巢会员俱乐部任务时间
 arg16 = switch,true,tag=雀巢会员俱乐部任务开关
 arg17 = input,"0 8 * * *",tag=夸克网盘任务时间
-arg18 = switch,true,tag=夸克网盘任务开关
+arg18 = switch,flase,tag=夸克网盘任务开关
 arg19 = input,"8 8 * * *",tag=轻之文库任务时间
 arg20 = switch,true,tag=轻之文库任务开关
 arg21 = input,"8 8 * * *",tag=动漫之家任务时间
