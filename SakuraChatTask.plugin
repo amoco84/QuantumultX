@@ -94,7 +94,7 @@ cron {arg9} script-path=https://gist.githubusercontent.com/Sliverkiss/4e0081f7b1
 cron {arg11} script-path=https://raw.githubusercontent.com/Sliverkiss/GoodNight/master/Script/zhixuan.js, timeout=300, enable= {arg12}, tag=知轩
 cron {arg13} script-path=https://gist.githubusercontent.com/Sliverkiss/33800a98dcd029ba09f8b6fc6f0f5162/raw/aliyun.js, timeout=120, enable= {arg14}, tag=阿里云盘签到
 cron {arg15} script-path=https://raw.githubusercontent.com/Sliverkiss/GoodNight/master/Script/nestle.js, timeout=300, enable= {arg16}, tag=雀巢会员俱乐部
-cron {arg17} script-path=https://gist.githubusercontent.com/Sliverkiss/1589f69e675019b0b685a57a89de9ea5/raw/quarkV2.js, timeout=300, enable= {arg18}, tag=夸克网盘
+cron {arg17} script-path=https://gist.githubusercontent.com/Sliverkiss/1589f69e675019b0b685a57a89de9ea5/raw/quarkV2.js, timeout=300, enable=false, tag=夸克网盘
 cron {arg19} script-path=https://gist.githubusercontent.com/Sliverkiss/a56aaa31bbc01191590b9c4c5c698751/raw/linovel.js, timeout=300, enable= {arg20}, tag=轻之文库
 cron {arg21} script-path=https://gist.githubusercontent.com/Sliverkiss/50a2046b37e01bb8f10ab0420d6f2a91/raw/dmzj.js, timeout=300, enable= {arg22}, tag=动漫之家
 cron {arg23} script-path=https://gist.githubusercontent.com/Sliverkiss/3c0239a09cbe381c572a826a5caf5621/raw/midea.js, timeout=300, enable= {arg24}, tag=美的会员
