@@ -82,7 +82,8 @@ arg71 = input,"15 16 * * *",tag=GlaDos任务时间
 arg72 = switch,true,tag=GlaDos任务开关
 arg73 = input,"30 16 * * *",tag=NASA每日一图任务时间
 arg74 = switch,true,tag=NASA每日一图任务开关
-
+arg75= input,"30 16 * * *",tag=热搜整合任务时间
+arg76 = switch,true,tag=热搜整合任务开关
 
 
 [Script]
@@ -123,5 +124,7 @@ cron {arg67} script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/sc
 cron {arg69} script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/wechat_pay_coupon.js, timeout=300, enable= {arg70}, tag=微付金币
 cron {arg71} script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/glados/glados.js, enable= {arg72}, tag=GlaDos签到
 cron {arg73} script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/nasa/nasapic.js, enable= {arg74}, tag=NASA每日一图
+cron {arg75} script-path=https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/top.js, timeout=10, enable= {arg76}, tag=热搜整合, img-url=https://is3-ssl.mzstatic.com/image/thumb/Purple126/v4/9a/d8/77/9ad877c6-e3d7-61a1-3911-5036239a41a6/AppIcon-1x_U007emarketing-0-7-0-0-sRGB-85-220.png/144x144bb.png
+
 
 [MITM]  
