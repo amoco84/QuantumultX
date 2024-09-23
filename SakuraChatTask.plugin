@@ -82,7 +82,7 @@ arg71 = input,"15 16 * * *",tag=GlaDos任务时间
 arg72 = switch,true,tag=GlaDos任务开关
 arg73 = input,"30 16 * * *",tag=NASA每日一图任务时间
 arg74 = switch,true,tag=NASA每日一图任务开关
-arg75= input,"30 16 * * *",tag=热搜整合任务时间
+arg75= input,"30 10 * * *",tag=热搜整合任务时间
 arg76 = switch,true,tag=热搜整合任务开关
 
 
