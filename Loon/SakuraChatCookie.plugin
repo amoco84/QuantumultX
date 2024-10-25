@@ -8,30 +8,30 @@
 #!loon_version = 3.2.3(753)
 
 [Argument]
-arg1 = switch,true,tag=奶茶多合一获取
-arg2 = switch,true,tag=Sakura Checkbox获取token
-arg3 = switch,true,tag=中免会员小程序获取token
-arg4 = switch,true,tag=亚朵酒店app获取token
-arg5 = switch,true,tag=哈啰单车获取token
-arg6 = switch,true,tag=知轩获取token
-arg7 = switch,true,tag=阿里云盘获取cookie
-arg8 = switch,true,tag=雀巢会员俱乐部获取token
-arg9 = switch,true,tag=夸克网盘获取token
-arg10 = switch,true,tag=美的会员获取token
-arg11 = switch,true,tag=比格披萨自助获取token
-arg12 = switch,true,tag=蜜雪冰城获取token
-arg13 = switch,true,tag=猫耳cookie
-arg14 = switch,true,tag=IQOO社区获取token
-arg15 = switch,true,tag=晓晓优选获取
-arg16 = switch,true,tag=胖乖生活获取
-arg17 = switch,true,tag=杰士邦安心福利社获取token
-arg18 = switch,true,tag=奈雪点单获取token
-arg19 = switch,true,tag=康佰家大药房获取token
-arg20 = switch,true,tag=希望云社区获取token
-arg21 = switch,true,tag=泡泡玛特获取token
-arg22 = switch,true,tag=联想赚金豆获取token
-arg23 = switch,true,tag=小蚕霸王餐获取
-arg24 = switch,true,tag=达美乐披萨获取token
+arg1 = switch,flase,tag=奶茶多合一获取
+arg2 = switch,flase,tag=Sakura Checkbox获取token
+arg3 = switch,flase,tag=中免会员小程序获取token
+arg4 = switch,flase,tag=亚朵酒店app获取token
+arg5 = switch,flase,tag=哈啰单车获取token
+arg6 = switch,flase,tag=知轩获取token
+arg7 = switch,flase,tag=阿里云盘获取cookie
+arg8 = switch,flase,tag=雀巢会员俱乐部获取token
+arg9 = switch,flase,tag=夸克网盘获取token
+arg10 = switch,flase,tag=美的会员获取token
+arg11 = switch,flase,tag=比格披萨自助获取token
+arg12 = switch,flase,tag=蜜雪冰城获取token
+arg13 = switch,flase,tag=猫耳cookie
+arg14 = switch,flase,tag=IQOO社区获取token
+arg15 = switch,flase,tag=晓晓优选获取
+arg16 = switch,flase,tag=胖乖生活获取
+arg17 = switch,flase,tag=杰士邦安心福利社获取token
+arg18 = switch,flase,tag=奈雪点单获取token
+arg19 = switch,flase,tag=康佰家大药房获取token
+arg20 = switch,flase,tag=希望云社区获取token
+arg21 = switch,flase,tag=泡泡玛特获取token
+arg22 = switch,flase,tag=联想赚金豆获取token
+arg23 = switch,flase,tag=小蚕霸王餐获取
+arg24 = switch,flase,tag=达美乐披萨获取token
 arg25 = switch,true,tag=微付金币获取token
 arg26 = switch,true,tag=TouchRetouch订阅
 arg27 = switch,true,tag=高德获取cookie
@@ -39,6 +39,10 @@ arg28 = switch,true,tag=建行生活获取cookie
 arg29 = switch,true,tag=捷停车获取token
 arg30 = switch,true,tag=京东获取token
 arg31 = switch,true,tag=GlaDos获取token
+arg32 = switch,true,tag=哔哩哔哩获取 Cookie
+arg33 = switch,true,tag=天翼云盘获取会话
+arg34 = switch,true,tag=美团获取 Cookie
+arg35 = switch,true,tag=携程旅行获取 GetAuth
 
 [Script]
 http-response ^https:\/\/(webapi|webapi2)\.qmai\.cn\/web\/seller\/(oauth\/flash-sale-login|account\/login-minp) script-path=https://gist.githubusercontent.com/Sliverkiss/8b4f5487e0f28786c7dec9c7484dcd5e/raw/teaMilk.js, requires-body=true, timeout=60, enable = {arg1}, tag=奶茶获取token
@@ -76,6 +80,10 @@ http-response ^https:\/\/yunbusiness\.ccb\.com\/(clp_coupon|clp_service)\/txCtrl
 http-request ^https:\/\/sytgate\.jslife\.com\.cn\/core-gateway\/order\/carno\/pay\/info script-path=https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jparking_sign.js, requires-body=true, timeout=10, enabled={arg29}, tag=获取捷停车userId
 http-request ^https:\/\/(api\.m|me-api|ms\.jr)\.jd\.com\/(client\.action\?functionId=signBean|user_new\/info\/GetJDUserInfoUnion\?|gw\/generic\/hy\/h5\/m\/appSign\?) script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js, requires-body=true, enabled={arg30}, tag=获取京东Cookie
 http-request https:\/\/glados\.rocks\/api\/user\/checkin script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/glados/glados.js, requires-body=true, enabled={arg31}, tag=GlaDos获取Cookie
-
+http-request ^https?:\/\/app\.bilibili\.com\/x\/resource\/fingerprint\? script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, timeout=60, enable = {arg32}, tag=哔哩哔哩获取 Cookie, img-url=https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/Bilibili.png
+http-request ^https?:\/\/m.bilibili.com/$ script-path=https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, timeout=60, enable = {arg32}, tag=哔哩哔哩(网页)获取 Cookie, img-url=https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/Bilibili.png
+http-request ^https:\/\/api\.cloud\.189\.cn\/mkt\/userSign\.action? script-path=https://raw.githubusercontent.com/MCdasheng/QuantumultX/main/Scripts/myScripts/ty.cookie.js, timeout=60, enable = {arg33}, tag=天翼云盘获取会话, img-url=https://raw.githubusercontent.com/cuteys/ProxyResource/main/icon/TianyiCloudDisk.png
+http-request ^https:\/\/i.meituan.com\/evolve\/signin\/signpost\/ script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.cookie.js, requires-body=true, timeout=60, enable = {arg34}, tag=美团获取 Cookie, img-url=https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/MeiTuanItakeaway.png
+http-response ^https:\/\/m\.ctrip\.com\/restapi\/soa2\/\d+\/[a-zA-Z]+Login(?:$|\?) script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Ctrip-DailyBonus/Ctrip.js, requires-body=true, timeout=60, enable = {arg35}, tag=携程旅行获取 GetAuth, img-url=https://raw.githubusercontent.com/cuteys/ProxyResource/main/icon/Ctrip.png
 [MITM]
-hostname = webapi2.qmai.cn,webapi.qmai.cn,qmwebapi.qmai.cn,h5.youzan.com,cdfmbrapi.cdfg.com.cn,miniapp.yaduo.com,api.hellobike.com,zxcstxt.com,auth.alipan.com,auth.aliyundrive.com,crm.nestlechinese.com,coral2.quark.cn,drive-pc.quark.cn,mvip.midea.cn,m.hualala.com,mxsa.mxbc.net,www.missevan.com,bbs-api.iqoo.com,xxyx-client-api.xiaoxiaoyouxuan.com,userapi.qiekj.com,xh-vip-api.a-touchin.com,tm-web.pin-dao.cn,app.fjxzj.com,xwyapi.newhope.cn,popvip.paquapp.com,mmembership.lenovo.com.cn,gw.xiaocantech.com,game.dominos.com.cn,api.revenuecat.com,sytgate.jslife.com.cn,yunbusiness.ccb.com,*.amap.com,payapp.weixin.qq.com,glados.rocks
+hostname = webapi2.qmai.cn,webapi.qmai.cn,qmwebapi.qmai.cn,h5.youzan.com,cdfmbrapi.cdfg.com.cn,miniapp.yaduo.com,api.hellobike.com,zxcstxt.com,auth.alipan.com,auth.aliyundrive.com,crm.nestlechinese.com,coral2.quark.cn,drive-pc.quark.cn,mvip.midea.cn,m.hualala.com,mxsa.mxbc.net,www.missevan.com,bbs-api.iqoo.com,xxyx-client-api.xiaoxiaoyouxuan.com,userapi.qiekj.com,xh-vip-api.a-touchin.com,tm-web.pin-dao.cn,app.fjxzj.com,xwyapi.newhope.cn,popvip.paquapp.com,mmembership.lenovo.com.cn,gw.xiaocantech.com,game.dominos.com.cn,api.revenuecat.com,sytgate.jslife.com.cn,yunbusiness.ccb.com,*.amap.com,payapp.weixin.qq.com,glados.rocks,app.bilibili.com, m.bilibili.com, api.cloud.189.cn, developer.aliyun.com, i.meituan.com, m.ctrip.com
