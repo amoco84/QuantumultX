@@ -1489,6 +1489,9 @@ DOMAIN, sdk-conf.getui.com, REJECT
 DOMAIN, switch.cup.com.cn, REJECT
 DOMAIN, tysdk.95516.com, REJECT
 
+# > 翼支付
+DOMAIN, mapi-app.bestpay.com.cn, REJECT
+
 # > 雅虎
 DOMAIN-SUFFIX,adserver.yahoo.com, REJECT
 DOMAIN-SUFFIX,adspecs.yahoo.com, REJECT
