@@ -4,7 +4,7 @@
 #!icon = https://raw.githubusercontent.com/amoco84/QuantumultX/refs/heads/main/Loon/Icons/app/myblockads.png
 #!date = 2024-11-22 10:05
 
-[Rule]
+[Rules]
 # ======= 0 ======= #
 # 12306
 DOMAIN, ad.12306.cn, DIRECT
