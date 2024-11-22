@@ -252,6 +252,8 @@ DOMAIN, sdkconfig.ad.xiaomi.com, REJECT
 # 移花宫
 DOMAIN, tong.8888888888.bid, REJECT
 AND, ((OR, ((DOMAIN-KEYWORD, kc.), (DOMAIN-KEYWORD, kcc.), (DOMAIN-KEYWORD, kg.))), (DEST-PORT, 8008)), REJECT
+# 翼支付
+DOMAIN, mapi-app.bestpay.com.cn, REJECT
 
 # 云闪付 开屏广告
 DOMAIN, ads.95516.com, REJECT
