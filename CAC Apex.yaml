@@ -18,7 +18,7 @@ dns:
 proxy-providers:
   myProvider:
     type: http
-    path: ./provider/myProvider.yml
+    path: ./内部存储/Download/myProvider.yml
     url: 'https://submit.xz61.cn:23443/api/v1/client/subscribe?token=f87eaae9c057f9e3dab0e43151740ad9' # 替换为你的订阅链接
     interval: 3600
     health-check:
