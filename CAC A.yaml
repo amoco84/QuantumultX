@@ -555,5 +555,6 @@ rules:
     - 'IP-CIDR6,fe80::/10,DIRECT'
     - 'DOMAIN-SUFFIX,cn,DIRECT'
     - 'DOMAIN-KEYWORD,-cn,DIRECT'
+    - 'DOMAIN-SUFFIX,019103.com,REJECT'
     - 'GEOIP,CN,DIRECT'
     - 'MATCH,CAC Apex'
