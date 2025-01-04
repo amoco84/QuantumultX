@@ -15,19 +15,18 @@ dns:
     fallback: ['https://doh.dns.sb/dns-query', 'https://dns.cloudflare.com/dns-query', 'https://dns.twnic.tw/dns-query', 'tls://8.8.4.4:853']
     fallback-filter: { geoip: true, ipcidr: [240.0.0.0/4, 0.0.0.0/32] }
 proxies:
-    - { name: '剩余流量：135.67 GB', type: trojan, server: cc.rk1.node-is.green, port: 10116, password: 9f621d4f-2d52-4548-856d-6f099509f005, udp: true, sni: hk12.bilibili.com, skip-cert-verify: true }
-    - { name: '距离下次重置剩余：5 天', type: trojan, server: cc.rk1.node-is.green, port: 10116, password: 9f621d4f-2d52-4548-856d-6f099509f005, udp: true, sni: hk12.bilibili.com, skip-cert-verify: true }
-    - { name: 套餐到期：2024-12-29, type: trojan, server: cc.rk1.node-is.green, port: 10116, password: 9f621d4f-2d52-4548-856d-6f099509f005, udp: true, sni: hk12.bilibili.com, skip-cert-verify: true }
-    - { name: 出现问题请先更新订阅！！！, type: trojan, server: cc.rk1.node-is.green, port: 10116, password: 9f621d4f-2d52-4548-856d-6f099509f005, udp: true, sni: hk12.bilibili.com, skip-cert-verify: true }
-    - { name: 软件需开启跳过证书验证！！！, type: trojan, server: cc.rk1.node-is.green, port: 10116, password: 9f621d4f-2d52-4548-856d-6f099509f005, udp: true, sni: hk12.bilibili.com, skip-cert-verify: true }
-    - { name: 官网：www.cac.mom, type: trojan, server: hgc.node-is.green, port: 40287, password: 9f621d4f-2d52-4548-856d-6f099509f005, udp: true, sni: hk12.bilibili.com, skip-cert-verify: true }
-    - { name: V0-香港-IPv6, type: vmess, server: gost.cloudflare.182682.xyz, port: 80, uuid: 9f621d4f-2d52-4548-856d-6f099509f005, alterId: 0, cipher: auto, udp: true, network: ws, ws-opts: { path: /, headers: { Host: gost.naiunclient.top } }, ws-path: /, ws-headers: { Host: gost.naiunclient.top } }
-    - { name: V1-香港2-IPv6, type: trojan, server: 0df1312a261fba08aa3bfa4e6754b6d7.v1.cac.node-is.green, port: 41919, password: 9f621d4f-2d52-4548-856d-6f099509f005, udp: true, sni: hk12.bilibili.com, skip-cert-verify: true }
-    - { name: 🇨🇦V1-加拿大-IPv6, type: trojan, server: 50ccec1d93d95a43779dd6b7a9cf36f8.v1.cac.node-is.green, port: 49470, password: 9f621d4f-2d52-4548-856d-6f099509f005, udp: true, sni: ca1.bilibili.com, skip-cert-verify: true }
+    - { name: '剩余流量：162.22 GB', type: trojan, server: hgc.node-is.green, port: 46828, password: 9f621d4f-2d52-4548-856d-6f099509f005, udp: true, sni: hk12.bilibili.com, skip-cert-verify: true }
+    - { name: '距离下次重置剩余：26 天', type: trojan, server: hgc.node-is.green, port: 46828, password: 9f621d4f-2d52-4548-856d-6f099509f005, udp: true, sni: hk12.bilibili.com, skip-cert-verify: true }
+    - { name: 套餐到期：2025-01-29, type: trojan, server: hgc.node-is.green, port: 46828, password: 9f621d4f-2d52-4548-856d-6f099509f005, udp: true, sni: hk12.bilibili.com, skip-cert-verify: true }
+    - { name: 出现问题请先更新订阅！！！, type: trojan, server: hgc.node-is.green, port: 46828, password: 9f621d4f-2d52-4548-856d-6f099509f005, udp: true, sni: hk12.bilibili.com, skip-cert-verify: true }
+    - { name: 软件需开启跳过证书验证！！！, type: trojan, server: hgc.node-is.green, port: 41996, password: 9f621d4f-2d52-4548-856d-6f099509f005, udp: true, sni: hk12.bilibili.com, skip-cert-verify: true }
+    - { name: 官网：www.cac.mom, type: trojan, server: hgc.node-is.green, port: 47935, password: 9f621d4f-2d52-4548-856d-6f099509f005, udp: true, sni: hk12.bilibili.com, skip-cert-verify: true }
+    - { name: V1-香港2-IPv6, type: trojan, server: 2996452b71bf457d5795c44fdd8b2e2c.v1.cac.node-is.green, port: 44811, password: 9f621d4f-2d52-4548-856d-6f099509f005, udp: true, sni: hk12.bilibili.com, skip-cert-verify: true }
+    - { name: 🇨🇦V1-加拿大-IPv6, type: trojan, server: 230fbdbcefbeb7f0e8c8acc5edfa3385.v1.cac.node-is.green, port: 43623, password: 9f621d4f-2d52-4548-856d-6f099509f005, udp: true, sni: ca1.bilibili.com, skip-cert-verify: true }
 proxy-groups:
-    - { name: CAC Apex, type: select, proxies: [自动选择, 故障转移, '剩余流量：135.67 GB', '距离下次重置剩余：5 天', 套餐到期：2024-12-29, 出现问题请先更新订阅！！！, 软件需开启跳过证书验证！！！, 官网：www.cac.mom, V0-香港-IPv6, V1-香港2-IPv6, 🇨🇦V1-加拿大-IPv6] }
-    - { name: 自动选择, type: url-test, proxies: ['剩余流量：135.67 GB', '距离下次重置剩余：5 天', 套餐到期：2024-12-29, 出现问题请先更新订阅！！！, 软件需开启跳过证书验证！！！, 官网：www.cac.mom, V0-香港-IPv6, V1-香港2-IPv6, 🇨🇦V1-加拿大-IPv6], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
-    - { name: 故障转移, type: fallback, proxies: ['剩余流量：135.67 GB', '距离下次重置剩余：5 天', 套餐到期：2024-12-29, 出现问题请先更新订阅！！！, 软件需开启跳过证书验证！！！, 官网：www.cac.mom, V0-香港-IPv6, V1-香港2-IPv6, 🇨🇦V1-加拿大-IPv6], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
+    - { name: CAC Apex, type: select, proxies: [自动选择, 故障转移, '剩余流量：162.22 GB', '距离下次重置剩余：26 天', 套餐到期：2025-01-29, 出现问题请先更新订阅！！！, 软件需开启跳过证书验证！！！, 官网：www.cac.mom, V1-香港2-IPv6, 🇨🇦V1-加拿大-IPv6] }
+    - { name: 自动选择, type: url-test, proxies: ['剩余流量：162.22 GB', '距离下次重置剩余：26 天', 套餐到期：2025-01-29, 出现问题请先更新订阅！！！, 软件需开启跳过证书验证！！！, 官网：www.cac.mom, V1-香港2-IPv6, 🇨🇦V1-加拿大-IPv6], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
+    - { name: 故障转移, type: fallback, proxies: ['剩余流量：162.22 GB', '距离下次重置剩余：26 天', 套餐到期：2025-01-29, 出现问题请先更新订阅！！！, 软件需开启跳过证书验证！！！, 官网：www.cac.mom, V1-香港2-IPv6, 🇨🇦V1-加拿大-IPv6], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
 rules:
     - 'IP-CIDR,104.16.155.10/32,DIRECT,no-resolve'
     - 'IP-CIDR,198.41.209.70/32,DIRECT,no-resolve'
