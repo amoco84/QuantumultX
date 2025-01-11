@@ -38,6 +38,7 @@ rules:
     - 'IP-CIDR,111.29.57.117/32,DIRECT,no-resolve'
 
     - 'DOMAIN-KEYWORD,wogg,DIRECT'
+    - 'DOMAIN-KEYWORD,iill,DIRECT'
     - 'DOMAIN-SUFFIX,tv.yydsys.top,DIRECT'
     - 'DOMAIN-SUFFIX,res.yunpan.win,DIRECT'
     - 'DOMAIN-SUFFIX,tv.iill.top,DIRECT'
